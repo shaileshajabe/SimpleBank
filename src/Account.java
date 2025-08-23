@@ -14,8 +14,7 @@ abstract class  Account {
         return CustomerId;
     }
 
-    public Account(int AccountNumber, double Balance, String CustomerId) {
-        this.AccountNumber = AccountNumber;
+    public Account(double Balance, String CustomerId) {
         this.Balance = Balance;
         this.CustomerId = CustomerId;
     }

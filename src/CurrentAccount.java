@@ -2,7 +2,7 @@ public class CurrentAccount extends Account {
  private int minimumBalance = 500;
  private double overdraftLimit = 0.0;
     public CurrentAccount(int accountNumber, double initialBalance, String customerId) {
-        super(accountNumber, initialBalance, customerId);
+        super( initialBalance, customerId);
     }
     @Override
     public double minimumBalance(){
@@ -14,3 +14,17 @@ public class CurrentAccount extends Account {
         return overdraftLimit;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

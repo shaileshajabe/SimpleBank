@@ -6,7 +6,7 @@ public class SavingAccount extends Account {
     private static final double SAVINGS_OVERDRAFT_LIMIT = 0.0;
 
     public SavingAccount(int accountNumber, double initialBalance, String customerId) {
-        super(accountNumber, initialBalance, customerId);
+        super( initialBalance, customerId);
     }
 
     @Override
