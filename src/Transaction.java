@@ -3,15 +3,15 @@ public class Transaction {
     private long accountNo;
     private String type; // "Deposit" or "Withdraw" or "Transfer"
     private double amount;
-    private String date;
+   // private String date;
 
     // Constructor
-    public Transaction(int transactionId, long accountNo, String type, double amount, String date) {
+    public Transaction(int transactionId, long accountNo, String type, double amount) {
         this.transactionId = transactionId;
         this.accountNo = accountNo;
         this.type = type;
         this.amount = amount;
-        this.date = date;
+        //this.date = date;
     }
 
     // Getters
@@ -31,9 +31,9 @@ public class Transaction {
         return amount;
     }
 
-    public String getDate() {
-        return date;
-    }
+//    public String getDate() {
+//        return date;
+//    }
 
     // To print transaction details
     @Override
@@ -41,7 +41,7 @@ public class Transaction {
         return "Transaction ID: " + transactionId +
                 ", Account No: " + accountNo +
                 ", Type: " + type +
-                ", Amount: " + amount +
-                ", Date: " + date;
+                ", Amount: " + amount ;
+               // ", Date: " + date;
     }
 }

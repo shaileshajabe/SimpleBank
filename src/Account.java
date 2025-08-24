@@ -4,9 +4,6 @@ abstract class  Account {
     private String CustomerId;
 
     //Getters
-    public int getAccountNumber() {
-        return AccountNumber;
-    }
     public double getBalance() {
         return Balance;
     }
