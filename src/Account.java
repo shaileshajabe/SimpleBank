@@ -3,6 +3,7 @@ abstract class  Account {
     private double Balance;
     private String CustomerId;
 
+
     //Getters
     public double getBalance() {
         return Balance;
@@ -10,10 +11,19 @@ abstract class  Account {
     public String getCustomerId() {
         return CustomerId;
     }
+    public int getAccountNumber() {
+        return AccountNumber;
+    }
 
-    public Account(double Balance, String CustomerId) {
+    public Account(double Balance, String CustomerId, int AccountNumber) {
         this.Balance = Balance;
         this.CustomerId = CustomerId;
+        this.AccountNumber = AccountNumber;
+    }
+
+    public Account(int AccountNumber, double Balance) {
+        this.AccountNumber = AccountNumber;
+        this.Balance = Balance;
     }
     public void deposit(double amount){
         Balance += amount;
@@ -22,8 +32,6 @@ abstract class  Account {
         Balance -= amount;
     }
 
-    abstract double minimumBalance();
 
-    abstract double overdraftLimit();
 
 }

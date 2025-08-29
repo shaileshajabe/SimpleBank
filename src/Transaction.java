@@ -12,6 +12,7 @@ public class Transaction {
         this.type = type;
         this.amount = amount;
         //this.date = date;
+        this.accountNo = accountNo;
     }
 
     // Getters
